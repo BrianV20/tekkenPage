@@ -10,6 +10,10 @@ app.get('/api', (req, res) => {
     res.json({ message: "hola desde el servidor!" });
 });
 
+app.get(('/'), (req, res) => {
+    // res.json({ message: 'Tekken home page' });
+});
+
 
 app.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
