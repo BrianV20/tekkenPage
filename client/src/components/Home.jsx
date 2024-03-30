@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 
 export default function Home() {
@@ -32,8 +33,8 @@ export default function Home() {
     return (
         <div>
             <Navbar />
-            <div className="border-2 border-blue-400 px-3">
-                <p className="text-2xl font-semibold">- Roster</p>
+            <div className="mx-2 mb-7">
+                <p className="text-2xl font-semibold">Roster</p>
                 {homeData ? (
                     <div className="flex flex-wrap gap-x-1 gap-y-2 justify-center">
                         {homeData.map((file, i) => {
@@ -49,6 +50,7 @@ export default function Home() {
                     </div>
                 ) : <p>Loading...</p>}
             </div>
+            <Footer />
         </div>
     )
 };
