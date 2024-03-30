@@ -20,7 +20,7 @@
         "block_frame": "+1~+2",
         "hit_frame": "SPD",
         "counter_hit_frame": "SPD",
-        "notes": "Rage art, Tail spin"
+        "notes": "Rage drive, Tail spin"
     },
     {
         "command": "in rage f+2+3, 3+4",
@@ -30,7 +30,7 @@
         "block_frame": "+5~+6",
         "hit_frame": "SPD",
         "counter_hit_frame": "SPD",
-        "notes": "Rage art, Tail spin"
+        "notes": "Rage drive, Tail spin"
     },
     {
         "command": "in rage f+2+3, f+3+4",
