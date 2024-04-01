@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import Navbar from "../components/Navbar";
 import Footer from "./Footer";
+import { correctName } from "../utils/functions";
 
 export default function CharacterByName() {
     const { characterName } = useParams();
@@ -13,18 +14,6 @@ export default function CharacterByName() {
         if(window.scrollY > 300){
             setIsVisible(!isVisible);
         };
-    };
-
-    const correctName = (charName) => {
-        let temp = charName.split('_');
-        if (temp.length > 1) {
-            let n1 = temp[0].charAt(0).toUpperCase() + temp[0].slice(1);
-            let n2 = temp[1].charAt(0).toUpperCase() + temp[1].slice(1);
-            return n1 + " " + n2;
-        }
-        else {
-            return temp[0].charAt(0).toUpperCase() + temp[0].slice(1);
-        }
     };
 
     useEffect(() => {

@@ -2,24 +2,13 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { correctName } from "../utils/functions";
 
 
 export default function Home() {
     const [homeData, setHomeData] = useState();
     // const [files, setFiles] = useState(0);
     const navigate = useNavigate();
-
-    const correctName = (charName) => {
-        let temp = charName.split('_');
-        if(temp.length > 1) {
-            let n1 = temp[0].charAt(0).toUpperCase() + temp[0].slice(1);
-            let n2 = temp[1].charAt(0).toUpperCase() + temp[1].slice(1);
-            return n1 + " " + n2;
-        }
-        else {
-            return temp[0].charAt(0).toUpperCase() + temp[0].slice(1);
-        }
-    }; 
     
     useEffect(() => {
         fetch('http://localhost:3001')

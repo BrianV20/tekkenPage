@@ -1,0 +1,4 @@
+LISTO. 1) Poner un paginado a la vista de busquedas, para los movimientos y personajes encontrados.
+2) darle estilo a la vista de SearchResults, a la navbar, footer.
+3) hacerla responsive.
+HACER ESTO 4) hacer una vista para un movimiento especifico, donde te muestre el movimiento con sus caracterisitcas y abajo te muestre un contenedor con dies movimientos que sean parecidos (por ejemplo un df+1 de jack va a mostrar 10 ataques de df+1 de otros personajes abajo). la logica para el contendedor seria asi: hago un fetch para traer los movimientos que incluyan df+1 en su command, ese array lo ordeno al azar, lo corto en 10 (o la cantidad menor que haya) y lo envío al componente pertinente para que los renderize.
