@@ -3,7 +3,7 @@
         "img": "https://cdn.dashfight.com/c58c591df1e9aa8c7747bc0c3472b747afd9e5d1_224.png"
     },
     {
-        "command": "in rage d/f+1+2 or FC+d/f+1+2",
+        "command": "in rage df+1+2 or FC+df+1+2",
         "hit_level": "m",
         "damage": "55",
         "start_up_frame": "20",
@@ -433,7 +433,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+1",
+        "command": "df+1",
         "hit_level": "m",
         "damage": "8",
         "start_up_frame": "15",
@@ -443,7 +443,7 @@
         "notes": ""
     },
     {
-        "command": "D/F+1, 1",
+        "command": "DF+1, 1",
         "hit_level": "m, m",
         "damage": "8,2",
         "start_up_frame": "15",
@@ -453,7 +453,7 @@
         "notes": ""
     },
     {
-        "command": "D/F+1, 1, 1",
+        "command": "DF+1, 1, 1",
         "hit_level": "m, m, m",
         "damage": "8,2,2",
         "start_up_frame": "15",
@@ -463,7 +463,7 @@
         "notes": ""
     },
     {
-        "command": "D/F+1, 1, 1, 1",
+        "command": "DF+1, 1, 1, 1",
         "hit_level": "m, m, m, m",
         "damage": "8,2,2,2",
         "start_up_frame": "15",
@@ -473,7 +473,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+1, 2",
+        "command": "df+1, 2",
         "hit_level": "m, m",
         "damage": "8,20",
         "start_up_frame": "15",
@@ -483,7 +483,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+2",
+        "command": "df+2",
         "hit_level": "m",
         "damage": "12",
         "start_up_frame": "13",
@@ -493,7 +493,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+2, 1",
+        "command": "df+2, 1",
         "hit_level": "m, h",
         "damage": "12,11",
         "start_up_frame": "13",
@@ -503,7 +503,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+2, 3",
+        "command": "df+2, 3",
         "hit_level": "m, m",
         "damage": "12,20",
         "start_up_frame": "13",
@@ -513,7 +513,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+3",
+        "command": "df+3",
         "hit_level": "l (TC)",
         "damage": "20",
         "start_up_frame": "29~30s cs6~",
@@ -523,7 +523,7 @@
         "notes": "Homing"
     },
     {
-        "command": "d/f+4",
+        "command": "df+4",
         "hit_level": "m",
         "damage": "23",
         "start_up_frame": "22~24",
@@ -663,7 +663,7 @@
         "notes": ""
     },
     {
-        "command": "d+3+4, 2, d/b (Cancel)",
+        "command": "d+3+4, 2, db (Cancel)",
         "hit_level": "l, (Special)",
         "damage": "15",
         "start_up_frame": "19s",
@@ -673,7 +673,7 @@
         "notes": ""
     },
     {
-        "command": "d/b+2",
+        "command": "db+2",
         "hit_level": "m?",
         "damage": "13",
         "start_up_frame": "15~17",
@@ -683,7 +683,7 @@
         "notes": ""
     },
     {
-        "command": "d/b+3",
+        "command": "db+3",
         "hit_level": "l (TC)",
         "damage": "11",
         "start_up_frame": "16~17s cs6~",
@@ -693,7 +693,7 @@
         "notes": ""
     },
     {
-        "command": "d/b+1+2",
+        "command": "db+1+2",
         "hit_level": "mh",
         "damage": "14,25",
         "start_up_frame": "15,27",
@@ -783,7 +783,7 @@
         "notes": ""
     },
     {
-        "command": "b+3, F or d/F",
+        "command": "b+3, F or dF",
         "hit_level": "m, (Special) (TC)(CD)",
         "damage": "12",
         "start_up_frame": "20",
@@ -874,7 +874,7 @@
     },
     {
         "command": "b+1+3 or b+2+4",
-        "hit_level": "Absorbs 1 h/m hit",
+        "hit_level": "Absorbs 1 hm hit",
         "damage": "",
         "start_up_frame": "2~10",
         "block_frame": "",
@@ -913,7 +913,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2",
+        "command": "ub+1+2",
         "hit_level": "mm",
         "damage": "5,2",
         "start_up_frame": "15,27",
@@ -923,7 +923,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2 (Second hit miss)",
+        "command": "ub+1+2 (Second hit miss)",
         "hit_level": "m",
         "damage": "5",
         "start_up_frame": "15",
@@ -933,7 +933,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2, 1",
+        "command": "ub+1+2, 1",
         "hit_level": "mm, m",
         "damage": "5,2,2",
         "start_up_frame": "15",
@@ -943,7 +943,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2, 1, 2",
+        "command": "ub+1+2, 1, 2",
         "hit_level": "mm, m, m",
         "damage": "5,2,2,2",
         "start_up_frame": "15",
@@ -953,7 +953,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2, 1, 2, 1",
+        "command": "ub+1+2, 1, 2, 1",
         "hit_level": "mm, m, m, m",
         "damage": "5,2,2,2,2",
         "start_up_frame": "15",
@@ -963,7 +963,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2, 1, 2, 1, 2",
+        "command": "ub+1+2, 1, 2, 1, 2",
         "hit_level": "mm, m, m, m, m",
         "damage": "5,2,2,2,2,2",
         "start_up_frame": "15",
@@ -973,7 +973,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2, 1, 2, 1, 2, 1",
+        "command": "ub+1+2, 1, 2, 1, 2, 1",
         "hit_level": "mm, m, m, m, m, m",
         "damage": "5,2,2,2,2,2,2",
         "start_up_frame": "15",
@@ -983,7 +983,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2, 1, 2, 1, 2, 1, 2",
+        "command": "ub+1+2, 1, 2, 1, 2, 1, 2",
         "hit_level": "mm, m, m, m, m, m, m",
         "damage": "5,2,2,2,2,2,2,2",
         "start_up_frame": "15",
@@ -993,7 +993,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2, 1, 2, 1, 2, 1, 2, 1",
+        "command": "ub+1+2, 1, 2, 1, 2, 1, 2, 1",
         "hit_level": "mm, m, m, m, m, m, m, m",
         "damage": "5,2,2,2,2,2,2,2,2,2",
         "start_up_frame": "15",
@@ -1003,7 +1003,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2, 1, 2, 1, 2, 1, 2, 1, 2",
+        "command": "ub+1+2, 1, 2, 1, 2, 1, 2, 1, 2",
         "hit_level": "mm, m, m, m, m, m, m, m, m",
         "damage": "5,2,2,2,2,2,2,2,2,2",
         "start_up_frame": "15",
@@ -1013,7 +1013,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2, 1, 2, 1, 2, 1, 2, 1, 2, 1",
+        "command": "ub+1+2, 1, 2, 1, 2, 1, 2, 1, 2, 1",
         "hit_level": "mm, m, m, m, m, m, m, m, m, m",
         "damage": "5,2,2,2,2,2,2,2,2,2,2",
         "start_up_frame": "15",
@@ -1023,7 +1023,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 4",
+        "command": "ub+1+2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 4",
         "hit_level": "mm, m, m, m, m, m, m, m, m, m, m",
         "damage": "5,2,2,2,2,2,2,2,2,2,2,14",
         "start_up_frame": "15",
@@ -1033,7 +1033,7 @@
         "notes": ""
     },
     {
-        "command": "u or u/f+3",
+        "command": "u or uf+3",
         "hit_level": "m (TJ)",
         "damage": "15",
         "start_up_frame": "27~28 js9~",
@@ -1053,7 +1053,7 @@
         "notes": ""
     },
     {
-        "command": "u/f+4",
+        "command": "uf+4",
         "hit_level": "m (TJ)",
         "damage": "22",
         "start_up_frame": "24~26 js9~",
@@ -1113,7 +1113,7 @@
         "notes": ""
     },
     {
-        "command": "b, d/f+4",
+        "command": "b, df+4",
         "hit_level": "l",
         "damage": "25",
         "start_up_frame": "29(29~)",
@@ -1213,7 +1213,7 @@
         "notes": ""
     },
     {
-        "command": "FC+d/f+2",
+        "command": "FC+df+2",
         "hit_level": "m",
         "damage": "12",
         "start_up_frame": "",
@@ -1223,7 +1223,7 @@
         "notes": ""
     },
     {
-        "command": "FC+d/f+2, 1",
+        "command": "FC+df+2, 1",
         "hit_level": "m,h",
         "damage": "12,25",
         "start_up_frame": "",
@@ -1233,7 +1233,7 @@
         "notes": ""
     },
     {
-        "command": "FC+d/f+4",
+        "command": "FC+df+4",
         "hit_level": "m",
         "damage": "21",
         "start_up_frame": "15~16 cs1~14",
@@ -1533,7 +1533,7 @@
         "notes": "Power crush"
     },
     {
-        "command": "After TNT u/b+1+2, , ",
+        "command": "After TNT ub+1+2, , ",
         "hit_level": "mm",
         "damage": "5,2\u00ef\u00bd\u017e",
         "start_up_frame": "15,27",

@@ -3,7 +3,7 @@
         "img": "https://cdn.dashfight.com/4835f21c10aee38f727d9580b8515bc960dc266d_224.png"
     },
     {
-        "command": "in rage d/f+3+3",
+        "command": "in rage df+3+3",
         "hit_level": "m,Throw",
         "damage": "55",
         "start_up_frame": "20 pc8",
@@ -91,7 +91,7 @@
         "": ""
     },
     {
-        "command": "in rage u/f+3+4",
+        "command": "in rage uf+3+4",
         "hit_level": "m (TJ),Throw",
         "damage": "35(,4,11)",
         "start_up_frame": "15 js15",
@@ -619,7 +619,7 @@
         "": "Nc_WK00F"
     },
     {
-        "command": "d/f+1",
+        "command": "df+1",
         "hit_level": "m",
         "damage": "10",
         "start_up_frame": "13",
@@ -630,7 +630,7 @@
         "": "Co_t_slpF"
     },
     {
-        "command": "d/f+1, 2",
+        "command": "df+1, 2",
         "hit_level": "m,h",
         "damage": "10,17",
         "start_up_frame": "13",
@@ -641,7 +641,7 @@
         "": "Nc_3lprp"
     },
     {
-        "command": "d/f+1, 2~1",
+        "command": "df+1, 2~1",
         "hit_level": "m,m",
         "damage": "10,20",
         "start_up_frame": "13",
@@ -652,7 +652,7 @@
         "": "Nc_3lprplp"
     },
     {
-        "command": "d/f+1, 4",
+        "command": "df+1, 4",
         "hit_level": "m,m",
         "damage": "10,23",
         "start_up_frame": "13",
@@ -663,7 +663,7 @@
         "": "Nc_3lprk"
     },
     {
-        "command": "d/f+1, 4~1",
+        "command": "df+1, 4~1",
         "hit_level": "m,m",
         "damage": "10,20",
         "start_up_frame": "13",
@@ -674,7 +674,7 @@
         "": "Nc_66rklp"
     },
     {
-        "command": "d/f+1, 4~3",
+        "command": "df+1, 4~3",
         "hit_level": "m,l",
         "damage": "10,15",
         "start_up_frame": "13",
@@ -685,7 +685,7 @@
         "": "Nc_66RKlkrpy"
     },
     {
-        "command": "d/f+1, 4~3, 2",
+        "command": "df+1, 4~3, 2",
         "hit_level": "m,l,m",
         "damage": "10,15,23",
         "start_up_frame": "13",
@@ -696,7 +696,7 @@
         "": "Nc_66rklkrp"
     },
     {
-        "command": "d/f+2",
+        "command": "df+2",
         "hit_level": "m",
         "damage": "10",
         "start_up_frame": "15",
@@ -707,7 +707,7 @@
         "": "Co_t_srpF"
     },
     {
-        "command": "d/f+2, 1",
+        "command": "df+2, 1",
         "hit_level": "m,m",
         "damage": "10,22",
         "start_up_frame": "15",
@@ -718,7 +718,7 @@
         "": "Nc_3rplp"
     },
     {
-        "command": "d/f+2, 3",
+        "command": "df+2, 3",
         "hit_level": "m,h",
         "damage": "10,11",
         "start_up_frame": "15",
@@ -729,7 +729,7 @@
         "": "Nc_3rplk"
     },
     {
-        "command": "d/f+3",
+        "command": "df+3",
         "hit_level": "l",
         "damage": "19",
         "start_up_frame": "20",
@@ -740,7 +740,7 @@
         "": "Nc_t_slkF"
     },
     {
-        "command": "d/f+4",
+        "command": "df+4",
         "hit_level": "m",
         "damage": "15",
         "start_up_frame": "16",
@@ -751,7 +751,7 @@
         "": "Co_t_srkF"
     },
     {
-        "command": "d/f+4, 3",
+        "command": "df+4, 3",
         "hit_level": "m,h",
         "damage": "15,20",
         "start_up_frame": "16",
@@ -762,7 +762,7 @@
         "": "Nc_3rklk"
     },
     {
-        "command": "d/f+4, 3~3",
+        "command": "df+4, 3~3",
         "hit_level": "m,m",
         "damage": "15,20",
         "start_up_frame": "16",
@@ -883,7 +883,7 @@
         "": "Co_t_srk00"
     },
     {
-        "command": "d+3+4 (Absorbs punch h/m)",
+        "command": "d+3+4 (Absorbs punch hm)",
         "hit_level": "h",
         "damage": "20",
         "start_up_frame": "18",
@@ -894,7 +894,7 @@
         "": "Nc_2lrk"
     },
     {
-        "command": "d/b+1",
+        "command": "db+1",
         "hit_level": "sm (TC)",
         "damage": "5",
         "start_up_frame": "10 cs4",
@@ -905,7 +905,7 @@
         "": ""
     },
     {
-        "command": "d/b+2",
+        "command": "db+2",
         "hit_level": "m",
         "damage": "16",
         "start_up_frame": "16",
@@ -916,7 +916,7 @@
         "": "Nc_t_srp00"
     },
     {
-        "command": "d/b+2, 2",
+        "command": "db+2, 2",
         "hit_level": "m,m",
         "damage": "16,16",
         "start_up_frame": "16",
@@ -927,7 +927,7 @@
         "": "Nc_1rprp"
     },
     {
-        "command": "d/b+4",
+        "command": "db+4",
         "hit_level": "l",
         "damage": "21",
         "start_up_frame": "21",
@@ -938,7 +938,7 @@
         "": "Nc_t_srk00"
     },
     {
-        "command": "d/b+3+4",
+        "command": "db+3+4",
         "hit_level": "m",
         "damage": "25",
         "start_up_frame": "30",
@@ -1059,7 +1059,7 @@
         "": "Nc_GuardH"
     },
     {
-        "command": "u/b+1",
+        "command": "ub+1",
         "hit_level": "m (TJ)",
         "damage": "20",
         "start_up_frame": "28 js9",
@@ -1070,7 +1070,7 @@
         "": ""
     },
     {
-        "command": "u or u/f+1",
+        "command": "u or uf+1",
         "hit_level": "m (TJ)",
         "damage": "20",
         "start_up_frame": "28 js9",
@@ -1081,7 +1081,7 @@
         "": "Nc_jplp00F"
     },
     {
-        "command": "u/f+2",
+        "command": "uf+2",
         "hit_level": "h",
         "damage": "20",
         "start_up_frame": "18 pc7~",
@@ -1092,7 +1092,7 @@
         "": "Nc_jprp00F"
     },
     {
-        "command": "u/b or u or u/f+1",
+        "command": "ub or u or uf+1",
         "hit_level": "h",
         "damage": "17",
         "start_up_frame": "15",
@@ -1103,7 +1103,7 @@
         "": ""
     },
     {
-        "command": "u/b+3",
+        "command": "ub+3",
         "hit_level": "m (TJ)",
         "damage": "18",
         "start_up_frame": "23 js9",
@@ -1114,7 +1114,7 @@
         "": ""
     },
     {
-        "command": "u or u/f+3",
+        "command": "u or uf+3",
         "hit_level": "m (TJ)",
         "damage": "20",
         "start_up_frame": "23 js9",
@@ -1125,7 +1125,7 @@
         "": "Co_jplk00F"
     },
     {
-        "command": "u/b or u or u/f+4",
+        "command": "ub or u or uf+4",
         "hit_level": "h (TJ)",
         "damage": "25",
         "start_up_frame": "20 js9",
@@ -1136,7 +1136,7 @@
         "": "Co_jprk00F"
     },
     {
-        "command": "u/f, N, 4",
+        "command": "uf, N, 4",
         "hit_level": "m (TJ)",
         "damage": "25",
         "start_up_frame": "23 js9",
@@ -1279,7 +1279,7 @@
         "": ""
     },
     {
-        "command": "FC+d/b or d+3",
+        "command": "FC+db or d+3",
         "hit_level": "l (TC)",
         "damage": "12",
         "start_up_frame": "16",
@@ -1400,7 +1400,7 @@
         "": ""
     },
     {
-        "command": "FC+d/f+3",
+        "command": "FC+df+3",
         "hit_level": "l (TC)",
         "damage": "15",
         "start_up_frame": "19",
@@ -1411,7 +1411,7 @@
         "": "Nc_23lkrpy"
     },
     {
-        "command": "FC+d/f+3, 2",
+        "command": "FC+df+3, 2",
         "hit_level": "l (TC),m",
         "damage": "15,23",
         "start_up_frame": "19",
@@ -1444,7 +1444,7 @@
         "": ""
     },
     {
-        "command": "b, b, u/b (back agains wall)",
+        "command": "b, b, ub (back agains wall)",
         "hit_level": "m",
         "damage": "25",
         "start_up_frame": "29~33",

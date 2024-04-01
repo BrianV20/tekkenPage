@@ -103,7 +103,7 @@
         "notes": ""
     },
     {
-        "command": "2, D/F+1",
+        "command": "2, DF+1",
         "hit_level": "h, m",
         "damage": "8,10",
         "start_up_frame": "10",
@@ -164,7 +164,7 @@
     },
     {
         "command": "3+4 or u+3+4",
-        "hit_level": "(Special)(Absorbs 1 h/m hit)",
+        "hit_level": "(Special)(Absorbs 1 hm hit)",
         "damage": "",
         "start_up_frame": "2~10",
         "block_frame": "",
@@ -174,7 +174,7 @@
     },
     {
         "command": "d+3+4",
-        "hit_level": "(Special)(Absorbs 1 h/m hit)",
+        "hit_level": "(Special)(Absorbs 1 hm hit)",
         "damage": "",
         "start_up_frame": "2~10",
         "block_frame": "",
@@ -303,7 +303,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+1",
+        "command": "df+1",
         "hit_level": "m (TC)(RDS)",
         "damage": "13",
         "start_up_frame": "14b cs6~13",
@@ -313,7 +313,7 @@
         "notes": ""
     },
     {
-        "command": "D/F+1",
+        "command": "DF+1",
         "hit_level": "m (TC)",
         "damage": "13",
         "start_up_frame": "14 cs6~13",
@@ -323,7 +323,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+2",
+        "command": "df+2",
         "hit_level": "m",
         "damage": "15",
         "start_up_frame": "15",
@@ -333,7 +333,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+2~1",
+        "command": "df+2~1",
         "hit_level": "mm",
         "damage": "8,12",
         "start_up_frame": "15~16, 22~23 (15~16)",
@@ -343,7 +343,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+2~1 (Second hit only)",
+        "command": "df+2~1 (Second hit only)",
         "hit_level": "m",
         "damage": "12",
         "start_up_frame": "22~23",
@@ -353,7 +353,7 @@
         "notes": ""
     },
     {
-        "command": "d/f+3",
+        "command": "df+3",
         "hit_level": "h",
         "damage": "23",
         "start_up_frame": "23~24 pc8~22",
@@ -363,7 +363,7 @@
         "notes": "Power crush"
     },
     {
-        "command": "d/f+4",
+        "command": "df+4",
         "hit_level": "m",
         "damage": "12",
         "start_up_frame": "12",
@@ -433,7 +433,7 @@
         "notes": ""
     },
     {
-        "command": "d/b+1",
+        "command": "db+1",
         "hit_level": "m",
         "damage": "25",
         "start_up_frame": "18",
@@ -443,7 +443,7 @@
         "notes": ""
     },
     {
-        "command": "d/b+1 (clean hit)",
+        "command": "db+1 (clean hit)",
         "hit_level": "m",
         "damage": "37",
         "start_up_frame": "18",
@@ -453,7 +453,7 @@
         "notes": ""
     },
     {
-        "command": "d/b+2",
+        "command": "db+2",
         "hit_level": "l(RDS)",
         "damage": "13",
         "start_up_frame": "18 cs6~",
@@ -463,7 +463,7 @@
         "notes": ""
     },
     {
-        "command": "d/b+3",
+        "command": "db+3",
         "hit_level": "l(!)",
         "damage": "0",
         "start_up_frame": "15",
@@ -473,7 +473,7 @@
         "notes": ""
     },
     {
-        "command": "d/b+4",
+        "command": "db+4",
         "hit_level": "l",
         "damage": "14",
         "start_up_frame": "18",
@@ -553,7 +553,7 @@
         "notes": "Tail spin"
     },
     {
-        "command": "u/b+3+4",
+        "command": "ub+3+4",
         "hit_level": "m (TJ)",
         "damage": "23",
         "start_up_frame": "22~24 js18~",
@@ -563,7 +563,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+3+4, d+1+2",
+        "command": "ub+3+4, d+1+2",
         "hit_level": "m (TJ), (AOP)",
         "damage": "23",
         "start_up_frame": "22~24 js18~",
@@ -623,7 +623,7 @@
         "notes": ""
     },
     {
-        "command": "u or u/f+1",
+        "command": "u or uf+1",
         "hit_level": "l (TJ), (AOP)",
         "damage": "15",
         "start_up_frame": "33~35 js9~23",
@@ -633,7 +633,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+3",
+        "command": "ub+3",
         "hit_level": "m",
         "damage": "11",
         "start_up_frame": "16~17 js9~",
@@ -653,7 +653,7 @@
         "notes": ""
     },
     {
-        "command": "u/f+3",
+        "command": "uf+3",
         "hit_level": "m",
         "damage": "13",
         "start_up_frame": "16~17 js9~",
@@ -673,7 +673,7 @@
         "notes": ""
     },
     {
-        "command": "u/f+4",
+        "command": "uf+4",
         "hit_level": "m (TJ)",
         "damage": "23",
         "start_up_frame": "23~26 js9~",
@@ -683,7 +683,7 @@
         "notes": ""
     },
     {
-        "command": "u/f+4, D",
+        "command": "uf+4, D",
         "hit_level": "m (TJ)",
         "damage": "23",
         "start_up_frame": "23~26s js9~",
@@ -693,7 +693,7 @@
         "notes": ""
     },
     {
-        "command": "u/f+4, d+1+2",
+        "command": "uf+4, d+1+2",
         "hit_level": "m (TJ), (AOP)",
         "damage": "23",
         "start_up_frame": "23~26 js9~",
@@ -703,7 +703,7 @@
         "notes": ""
     },
     {
-        "command": "u/f+1+2",
+        "command": "uf+1+2",
         "hit_level": "m (TJ)",
         "damage": "23",
         "start_up_frame": "26~27 js9~",
@@ -713,7 +713,7 @@
         "notes": ""
     },
     {
-        "command": "u/f+1+2, B",
+        "command": "uf+1+2, B",
         "hit_level": "m (TJ)(RDS)",
         "damage": "23",
         "start_up_frame": "26~27b js9~",
@@ -723,7 +723,7 @@
         "notes": ""
     },
     {
-        "command": "u/f+3+4",
+        "command": "uf+3+4",
         "hit_level": "mmm (RDS)(TJ)",
         "damage": "8,10,12",
         "start_up_frame": "16~17 ,27~28, 36~37(b) js9~",
@@ -733,7 +733,7 @@
         "notes": ""
     },
     {
-        "command": "u/f+3+4 (Third hit miss)",
+        "command": "uf+3+4 (Third hit miss)",
         "hit_level": "mm (RDS)(TJ)",
         "damage": "8,10",
         "start_up_frame": "16~17 ,27~28(b) js9~",
@@ -1013,7 +1013,7 @@
         "notes": ""
     },
     {
-        "command": "FC+d/f+2",
+        "command": "FC+df+2",
         "hit_level": "l (TC)",
         "damage": "10",
         "start_up_frame": "19s cs1~",
@@ -1023,7 +1023,7 @@
         "notes": ""
     },
     {
-        "command": "FC+d/f+2, D/F",
+        "command": "FC+df+2, DF",
         "hit_level": "l (TC)(RDS)",
         "damage": "10",
         "start_up_frame": "19bs cs1~",
@@ -1033,7 +1033,7 @@
         "notes": ""
     },
     {
-        "command": "FC+d/f+2, 1",
+        "command": "FC+df+2, 1",
         "hit_level": "l (TC), l (TC)",
         "damage": "10,14",
         "start_up_frame": "s cs1~",
@@ -1043,7 +1043,7 @@
         "notes": ""
     },
     {
-        "command": "FC+d/f+2, 1, D/F",
+        "command": "FC+df+2, 1, DF",
         "hit_level": "l (TC), l (TC)(RDS)",
         "damage": "10,14",
         "start_up_frame": "bs cs1~",
@@ -1053,7 +1053,7 @@
         "notes": ""
     },
     {
-        "command": "FC+d/f+4",
+        "command": "FC+df+4",
         "hit_level": "l (TC), (AOP)",
         "damage": "13",
         "start_up_frame": "18~20 cs1~",
@@ -1063,7 +1063,7 @@
         "notes": ""
     },
     {
-        "command": "FC+d/f+4, 4",
+        "command": "FC+df+4, 4",
         "hit_level": "l (TC), l (TC)",
         "damage": "13,13",
         "start_up_frame": "s cs1~",
@@ -1133,7 +1133,7 @@
         "notes": ""
     },
     {
-        "command": "d/b+1+2 (SSR)",
+        "command": "db+1+2 (SSR)",
         "hit_level": "(HYP)",
         "damage": "",
         "start_up_frame": "18~19 (27~) 6~",
@@ -1143,7 +1143,7 @@
         "notes": ""
     },
     {
-        "command": "u/b+1+2 (SSL)",
+        "command": "ub+1+2 (SSL)",
         "hit_level": "(HYP)",
         "damage": "",
         "start_up_frame": "18~19 (27~) 6~",
@@ -1263,7 +1263,7 @@
         "notes": ""
     },
     {
-        "command": "FC+d/b+3+4",
+        "command": "FC+db+3+4",
         "hit_level": "(RDS)(Special)",
         "damage": "",
         "start_up_frame": "b",
@@ -1273,7 +1273,7 @@
         "notes": ""
     },
     {
-        "command": "RDS u/f, f",
+        "command": "RDS uf, f",
         "hit_level": "(Special)",
         "damage": "",
         "start_up_frame": "",
@@ -1283,7 +1283,7 @@
         "notes": ""
     },
     {
-        "command": "RDS u/f, f, D/F",
+        "command": "RDS uf, f, DF",
         "hit_level": "(Special)",
         "damage": "",
         "start_up_frame": "s",
@@ -1513,7 +1513,7 @@
         "notes": ""
     },
     {
-        "command": "RDS d/b or d or d/f+1+2",
+        "command": "RDS db or d or df+1+2",
         "hit_level": "(RDS)",
         "damage": "",
         "start_up_frame": "24~26 8~",
@@ -1533,7 +1533,7 @@
         "notes": ""
     },
     {
-        "command": "RDS d/b or d/f+4",
+        "command": "RDS db or df+4",
         "hit_level": "l(!)",
         "damage": "0",
         "start_up_frame": "15",
@@ -1543,7 +1543,7 @@
         "notes": ""
     },
     {
-        "command": "RDS u or u/f+1",
+        "command": "RDS u or uf+1",
         "hit_level": "l (TJ), (Special)",
         "damage": "22",
         "start_up_frame": "33~35 js9~23",
@@ -1743,7 +1743,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u/b or u or u/f+3",
+        "command": "AOP ub or u or uf+3",
         "hit_level": "m (TJ)",
         "damage": "14",
         "start_up_frame": "15~17 js10~",
@@ -1753,7 +1753,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u/b or u or u/f+3, 1",
+        "command": "AOP ub or u or uf+3, 1",
         "hit_level": "m (TJ), m (TJ), (Special)",
         "damage": "14,22",
         "start_up_frame": "js1~22",
@@ -1763,7 +1763,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u/b or u or u/f+3, 3",
+        "command": "AOP ub or u or uf+3, 3",
         "hit_level": "m (TJ), h (TJ)",
         "damage": "14,25",
         "start_up_frame": "js1~",
@@ -1773,7 +1773,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u/b or u or u/f+3, 4",
+        "command": "AOP ub or u or uf+3, 4",
         "hit_level": "m (TJ), m",
         "damage": "14,19",
         "start_up_frame": "js1~12",
@@ -1783,7 +1783,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u or u/f+4",
+        "command": "AOP u or uf+4",
         "hit_level": "m (TJ)",
         "damage": "12",
         "start_up_frame": "16~26s js8~",
@@ -1793,7 +1793,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u or u/f+4, B",
+        "command": "AOP u or uf+4, B",
         "hit_level": "m (TJ)(RDS)",
         "damage": "12",
         "start_up_frame": "16~26b js8~",
@@ -1803,7 +1803,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u or u/f+4, d+1+2",
+        "command": "AOP u or uf+4, d+1+2",
         "hit_level": "m (TJ), (Special)",
         "damage": "12",
         "start_up_frame": "16~26 js8~",
@@ -1813,7 +1813,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u or u/f+4, 4",
+        "command": "AOP u or uf+4, 4",
         "hit_level": "m (TJ), m (TJ)",
         "damage": "12,12",
         "start_up_frame": "s js18~",
@@ -1823,7 +1823,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u/b or u or U/F",
+        "command": "AOP ub or u or UF",
         "hit_level": "(Special) (TJ)",
         "damage": "",
         "start_up_frame": "js9~",
@@ -1833,7 +1833,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u/b or u or u/f, n+3",
+        "command": "AOP ub or u or uf, n+3",
         "hit_level": "m (TJ)",
         "damage": "30",
         "start_up_frame": "12~16 (28~30) js1~",
@@ -1843,7 +1843,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u/b or u or u/f, n+3, d+1+2",
+        "command": "AOP ub or u or uf, n+3, d+1+2",
         "hit_level": "m (TJ), (Special)",
         "damage": "30",
         "start_up_frame": "12~16 (28~30) js1~",
@@ -1853,7 +1853,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u/b or u or u/f, n+4",
+        "command": "AOP ub or u or uf, n+4",
         "hit_level": "m (TJ)",
         "damage": "25",
         "start_up_frame": "8~9 (23~24) js1~",
@@ -1863,7 +1863,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u/b or u or u/f(When landing)4",
+        "command": "AOP ub or u or uf(When landing)4",
         "hit_level": "m (TJ)",
         "damage": "25",
         "start_up_frame": "9~10 (40~41) js1~5",
@@ -1873,7 +1873,7 @@
         "notes": ""
     },
     {
-        "command": "AOP u/b or u or u/f(When landing)3",
+        "command": "AOP ub or u or uf(When landing)3",
         "hit_level": "l (TC)",
         "damage": "19",
         "start_up_frame": "15~16s (46~47) js1~6 cs7~",
@@ -1883,7 +1883,7 @@
         "notes": ""
     },
     {
-        "command": "AOP d/b or b or d/f or f",
+        "command": "AOP db or b or df or f",
         "hit_level": "(Special)",
         "damage": "",
         "start_up_frame": "15~16 (46~47) 1~6 7~",
