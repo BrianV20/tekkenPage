@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 export default function Home() {
     const [homeData, setHomeData] = useState();
-    const [files, setFiles] = useState(0);
+    // const [files, setFiles] = useState(0);
     const navigate = useNavigate();
 
     const correctName = (charName) => {
@@ -26,7 +26,7 @@ export default function Home() {
         .then((res) => res.json())
         .then((data) => {
             setHomeData(data);
-            setFiles(data.length);
+            // setFiles(data.length);
         });
     }, []);
 
