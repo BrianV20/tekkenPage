@@ -8,6 +8,22 @@ const jsonDirectory = path.join(__dirname, "data");
 let charactersJsons = [];
 const PORT = process.env.PORT || 3001;
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+function cutArray(array) {
+  let newArray = [];
+  for(let i = 0; i < 10; i++){
+    newArray.push(array[i]);
+  };
+  return newArray;
+}
+
 app.use(cors());
 
 app.get("/", async (req, res) => {
@@ -27,29 +43,6 @@ app.get("/", async (req, res) => {
 
 app.get("/api", (req, res) => {
   res.json({ message: "hola desde el servidor!" });
-});
-
-app.get("/:characterName", (req, res, next) => {
-  const characterName = req.params.characterName;
-
-  if (characterName === "search") {
-    next();
-  }
-  else {
-      const requestedCharacterFile = fs
-        .readdirSync(jsonDirectory)
-        .find((file) => path.basename(file) == characterName + ".json");
-    
-      if (requestedCharacterFile) {
-        const requestedCharacter = require(path.join(
-          jsonDirectory,
-          requestedCharacterFile
-        ));
-        res.send(requestedCharacter);
-      } else {
-        res.status(404).send({ message: "Character not found" });
-      }
-  }
 });
 
 app.get("/search/:searchText", async (req, res) => {
@@ -106,22 +99,112 @@ app.get("/search/:searchText", async (req, res) => {
   }
 });
 
-// app.get('/:characterName/:selectedMove', async (req, res) => {
-//     const { characterName, selectedMove } = req.params;
-//     const fileName = `${characterName}.json`;
-//     const filePath = path.join(jsonDirectory, fileName);
+app.get('/:characterName/:selectedMove', async (req, res) => {
+    const { characterName, selectedMove } = req.params;
+    charactersJsons = [];
+    filteredMoves = [];
+    let requestedCharacterJson = "";
+    let requestedMove = "";
+    // const filePath = path.join(jsonDirectory, fileName);
 
-//     if (fs.existsSync(filePath)) {
-//         const characterData = require(filePath);
-//         const selectedMoves = selectedMove.split(',');
+    // const requestedCharacterFile = fs.readdirSync(jsonDirectory).find((file) => path.basename(file) == characterName + ".json");
+    // const requestedMove = fs.readdirSync(jsonDirectory).find((file) => path.basename(file) == characterName + ".json").find(m => m.command == selectedMove);
+    // console.log("EL REQUESTED MOVE: " + requestedMove);
 
-//         const filteredMoves = characterData.filter(move => selectedMoves.includes(move.command));
+  // if (requestedCharacterFile) {
+  //   const requestedCharacter = require(path.join(jsonDirectory, requestedCharacterFile));
+  // };
 
-//         res.send(filteredMoves);
-//     } else {
-//         res.status(404).send({ message: 'Character not found' });
-//     }
-// });
+    await fs.readdirSync(jsonDirectory).forEach((file) => {
+      if (path.extname(file) === ".json") {
+        const json = require(path.join(jsonDirectory, file));
+        if(file.split('.json')[0] === characterName) {
+          requestedCharacterJson = json;
+        }
+        else {
+          // const temp = path.basename(file).toString();
+          // charactersJsons.push(temp)
+          const name = file.split(".json")[0];
+          charactersJsons.push({ characterName: name, data: json });
+        }
+      }
+    });
+
+    //map para agregar los movimientos que sean igual al ingresado.
+    charactersJsons.map((jsonFile) => {
+      jsonFile.data.map((move, i) => {
+        if (move.command != undefined) {
+          if (move.command.toLowerCase() == (selectedMove.toLowerCase())) {
+          // if (move.command.toLowerCase().includes(selectedMove.toLowerCase())) {
+            // console.log("\nCharacter: " + jsonFile.characterName + "\nMove: " + move.command);
+            filteredMoves.push({
+              characterName: jsonFile.characterName,
+              characterImg: jsonFile.data[0].img,
+              move: move,
+            });
+          }
+        }
+      });
+    });
+
+    //map para agregar los movimientos que contengan en su command el ingresado. Esto se ejecuta en caso de que no se hayan encontrado 10 movimientos en el map anterior.
+    if(filteredMoves.length < 10) {
+      charactersJsons.map((jsonFile) => {
+        jsonFile.data.map((move, i) => {
+          if (move.command != undefined) {
+            if (move.command.toLowerCase().includes(selectedMove.toLowerCase())) {
+              if(filteredMoves.find(m => m.move.command == move.command) != null){
+                // console.log(jsonFile.characterName + ": " + move.command + " YA SE ENCUENTRA EN filteredMoves");
+              }
+              else {
+                filteredMoves.push({
+                  characterName: jsonFile.characterName,
+                  characterImg: jsonFile.data[0].img,
+                  move: move,
+              });
+              }
+            }
+          }
+        });
+      });
+    }
+
+    //map para buscar el movimiento con el command ingresado.
+    requestedCharacterJson.map((m) => {
+      if(m.command == selectedMove){
+        console.log("ESTE ES EL MOVIMIENTO BUSCADO: " + m.command);
+        requestedMove = m;
+      }
+    });
+
+    filteredMoves = cutArray(shuffleArray(filteredMoves));
+
+    res.json({ requestedMove: requestedMove, characterName: characterName, moves: filteredMoves });
+    // res.json({ reqq: selectedMove })
+});
+
+app.get("/:characterName", (req, res, next) => {
+  const characterName = req.params.characterName;
+
+  if (characterName === "search") {
+    next();
+  }
+  else {
+      const requestedCharacterFile = fs
+        .readdirSync(jsonDirectory)
+        .find((file) => path.basename(file) == characterName + ".json");
+    
+      if (requestedCharacterFile) {
+        const requestedCharacter = require(path.join(
+          jsonDirectory,
+          requestedCharacterFile
+        ));
+        res.send(requestedCharacter);
+      } else {
+        res.status(404).send({ message: "Character not found" });
+      }
+  }
+});
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
