@@ -8,7 +8,7 @@ export default function CharacterByName() {
     const { characterName } = useParams();
     const [characterData, setCharacterData] = useState(null);
     const [isVisible, setIsVisible] = useState(false);
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const toggleVisibility = () => {
         if(window.scrollY > 300){
@@ -47,16 +47,17 @@ export default function CharacterByName() {
                         {characterData.map((move, i) => {
                             return i !== 0 ? (
                                 <div key={move + i} className="grid grid-cols-5 border-2 border-lightblue break-words"
-                                // onClick={() => {
-                                //     const modifiedMove = move.command.split(' ').join('_');
-                                //     console.log(modifiedMove);
-                                //     navigate(`/${characterName}/${modifiedMove}`);
-                                //     if(move.notes.includes('rage') || move.notes.includes('Rage')){
-                                //         if(move.notes.includes('drive')){
-                                //             // navigate(`/${characterName}/${}`)
-                                //         }
-                                //     }
-                                // }}
+                                onClick={() => {
+                                    const modifiedMove = move.command.split(' ').join('_');
+                                    // console.log(modifiedMove);
+                                    // navigate(`/${characterName}/${modifiedMove}`);
+                                    navigate(`/${characterName}/${move.command}`);
+                                    // if(move.notes.includes('rage') || move.notes.includes('Rage')){
+                                    //     if(move.notes.includes('drive')){
+                                    //         navigate(`/${characterName}/${}`)
+                                    //     }
+                                    // }
+                                }}
                                 >
                                     <p className="border-r-2 border-r-lightblue p-1">{move.command}</p>
                                     <p className="border-r-2 border-r-lightblue p-1">{move.hit_level}</p>
@@ -82,27 +83,6 @@ export default function CharacterByName() {
                         </div>
                     )}
                 </div>
-                // <div className="border-2 border-blue-600 mx-3">
-                //     <div className="bg-orange-200 flex divide-x-2">
-                //         <p>Command</p>
-                //         <p>Hit level</p>
-                //         <p>Damage</p>
-                //         <p>Frames(startUp, block, hit, CH)</p>
-                //         <p>Notes</p>
-                //     </div>
-                //     <div className="bg-orange-300 flex flex-col">
-                //         {characterData.map((move, i) => {
-                //             return <div key={move + i} className="border-2 border-black flex">
-                //                 <p>{move.command}</p>
-                //                 <p>{move.hit_level}</p>
-                //                 <p>{move.damage}</p>
-                //                 <p>.{move.start_up_frame} . {move.block_frame} .{move.hit_frame} .{move.counter_hit_frame}</p>
-                //                 <p>{move.notes}</p>
-                //             </div>
-                //         })}
-                //     </div>
-                //     {/* <p>{characterData[1].command}</p> */}
-                // </div>
             ) : <p>Loading...</p>}
             <Footer />
         </div>

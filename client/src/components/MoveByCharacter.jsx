@@ -4,21 +4,33 @@ import Navbar from "./Navbar";
 
 export default function MoveByCharacter() {
     const { characterName, selectedMove } = useParams();
-    const { charactersData, setCharactersData } = useState([]);
+    const [ moveData, setMoveData ] = useState({
+        requestedMove: {},
+        requestedMoveCharName: '',
+        movesAlike: []
+    });
 
     useEffect(() => {
         fetch(`http://localhost:3001/${characterName}/${selectedMove}`)
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
-            setCharactersData(data);
+            // console.log(data)
+            setMoveData({
+                requestedMove: data.requestedMove,
+                requestedMoveCharName: data.characterName,
+                movesAlike: data.moves
+            });
         });
-    }, [characterName]);
+    }, []);
 
     return (
         <div>
             <Navbar />
-            Move by {characterName} {selectedMove}
+            {moveData != undefined ? (
+                <div>
+                    Move by {moveData.requestedMoveCharName} - {moveData.requestedMove.command}
+                </div>
+            ) : <p>Loading</p>}
         </div>
     )
 };

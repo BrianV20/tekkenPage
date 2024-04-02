@@ -111,7 +111,7 @@ export default function SearchResults() {
                                 <p className="font-semibold">Moves</p>
                                 <div className="bg-violet-300 flex flex-wrap justify-center">
                                     {currentItemsMoves.map((move, i) => {
-                                        return <div className="border-2 border-blue-500 m-2 flex w-[6rem] flex-col" key={move + i} onClick={() => navigate(`/${move.characterName}`)}>
+                                        return <div className="border-2 border-blue-500 m-2 flex w-[6rem] flex-col" key={move + i} onClick={() => navigate(`/${move.characterName}/${move.move.command}`)}>
                                             <img src={move.characterImg} alt={move.characterName + 'pic'} />
                                             <p>{move.move.command}</p>
                                         </div>

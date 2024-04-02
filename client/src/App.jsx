@@ -3,7 +3,7 @@ import Home from "./components/Home";
 import TestComponent from "./components/TestComponent";
 import CharacterByName from "./components/CharacterByName";
 import SearchResults from "./components/SearchResults";
-// import MoveByCharacter from "./components/MoveByCharacter";
+import MoveByCharacter from "./components/MoveByCharacter";
 
 function App() {
 
@@ -12,9 +12,9 @@ function App() {
       <Routes >
         <Route path='/' element={<Home />} />
         <Route path='/api' element={<TestComponent />} />
-        <Route path='/:characterName' element={<CharacterByName />} /> 
         <Route path='/search/:searchText' element={<SearchResults />} />
-        {/* <Route path='/:characterName/:selectedMove' element={<MoveByCharacter />} /> */}
+        <Route path='/:characterName/:selectedMove' element={<MoveByCharacter />} />
+        <Route path='/:characterName' element={<CharacterByName />} /> 
       </Routes>
     </BrowserRouter>
   );
