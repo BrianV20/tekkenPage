@@ -168,18 +168,25 @@ app.get('/:characterName/:selectedMove', async (req, res) => {
         });
       });
     }
-
+    
     //map para buscar el movimiento con el command ingresado.
     requestedCharacterJson.map((m) => {
       if(m.command == selectedMove){
         console.log("ESTE ES EL MOVIMIENTO BUSCADO: " + m.command);
         requestedMove = m;
-      }
+      };
     });
 
     filteredMoves = cutArray(shuffleArray(filteredMoves));
 
-    res.json({ requestedMove: requestedMove, characterName: characterName, moves: filteredMoves });
+    let newFilteredMoves = [];
+    filteredMoves.map((m, i) => {
+      if(filteredMoves[i] != null){
+        newFilteredMoves.push(filteredMoves[i]);
+      };
+    });
+
+    res.json({ requestedMove: requestedMove, characterImg: requestedCharacterJson[0].img, moves: newFilteredMoves });
     // res.json({ reqq: selectedMove })
 });
 
