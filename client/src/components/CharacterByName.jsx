@@ -48,7 +48,7 @@ export default function CharacterByName() {
                             return i !== 0 ? (
                                 <div key={move + i} className="grid grid-cols-5 border-2 border-lightblue break-words"
                                 onClick={() => {
-                                    const modifiedMove = move.command.split(' ').join('_');
+                                    // const modifiedMove = move.command.split(' ').join('_');
                                     // console.log(modifiedMove);
                                     // navigate(`/${characterName}/${modifiedMove}`);
                                     navigate(`/${characterName}/${move.command}`);

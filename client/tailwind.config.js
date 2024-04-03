@@ -8,6 +8,10 @@ export default {
     extend: {
       colors: {
         'lightblue': '#8ecae6'
+      },
+      fontFamily: {
+        'Page-Title': ['Be Vietnam Pro'],
+        'Default': ['Poppins']
       }
     },
   },

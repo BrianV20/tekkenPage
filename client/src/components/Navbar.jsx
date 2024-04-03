@@ -18,7 +18,7 @@ export default function Navbar() {
     return (
         <div className="md:px-4">
             <div className="flex bg-[#fb8500] border-b-4 border-black w-full">
-                <div className="font-bold text-xl w-[40%]" onClick={() => navigate('/')}>Tekken moves page</div>
+                <div className="font-bold text-xl w-[40%] font-Page-Title" onClick={() => navigate('/')}>Tekken moves page</div>
                 <div className="w-[60%] flex items-center gap-x-4">
                     <input type="text"
                         placeholder="search characters, moves, etc"
