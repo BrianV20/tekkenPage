@@ -4,7 +4,7 @@ function TestComponent() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch('https://tekkenmoves.onrender.com//api')
+    fetch('https://tekkenmoves.onrender.com/api')
     .then((res) => res.json())
     .then((data) => setData(data.message));
   }, []);

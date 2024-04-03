@@ -64,7 +64,7 @@ export default function SearchResults() {
      
 
     useEffect(() => {
-        fetch(`https://tekkenmoves.onrender.com//search/${searchText}`)
+        fetch(`https://tekkenmoves.onrender.com/search/${searchText}`)
             .then((res) => res.json())
             // .then((data) => setTextToSearch(data.message));
             .then((data) => {
