@@ -14,7 +14,7 @@ export default function MoveByCharacter() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:3001/${characterName}/${selectedMove}`)
+        fetch(`https://tekkenmoves.onrender.com//${characterName}/${selectedMove}`)
             .then((res) => res.json())
             .then((data) => {
                 // console.log(data)

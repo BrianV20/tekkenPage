@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "clientStart": "npm start"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "https://tekkenmoves.onrender.com/",
   "dependencies": {
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",

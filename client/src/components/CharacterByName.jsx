@@ -22,7 +22,7 @@ export default function CharacterByName() {
     }, []);
 
     useEffect(() => {
-        fetch(`http://localhost:3001/${characterName}`)
+        fetch(`https://tekkenmoves.onrender.com//${characterName}`)
             .then((response) => response.json())
             .then((data) => setCharacterData(data));
     }, [characterName]);
