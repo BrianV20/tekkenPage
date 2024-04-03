@@ -30,15 +30,23 @@ export default function MoveByCharacter() {
         <div>
             <Navbar />
             {moveData != undefined ? (
-                <div className="mx-2">
-                    <div className="border-2 border-black rounded-lg gap-x-4 my-2 mx-3 flex text-xl items-center bg-blue-900 text-white md:gap-x-8 md:mx-10 md:mt-6 md:mb-4">
+                <div className="mx-2 lg:px-40">
+                    <div className="border-2 border-black rounded-lg gap-x-4 my-2 mx-3 flex text-xl items-center bg-blue-900 text-white md:gap-x-8 md:mx-10 md:mt-6 md:mb-4 lg:mx-36">
                         <img src={moveData.characterImg} alt={`${correctName(characterName)} pic`} className="size-36 md:size-44" onClick={() => {
                             navigate(`/${characterName}`)
                         }} />
-                        <div className="flex flex-col mx-auto flex-wrap md:text-center">
-                            <p className="text-3xl mx-auto md:text-4xl">{correctName(characterName)}</p>
-                            <p className="text-xl md:text-3xl">{moveData.requestedMove.command}</p>
+                        {window.innerWidth < 1024 ? (
+                            <div className="flex flex-col mx-auto flex-wrap md:text-center">
+                                <p className="text-3xl mx-auto md:text-4xl">{correctName(characterName)}</p>
+                                <p className="text-xl md:text-3xl">{moveData.requestedMove.command}</p>
+                            </div>
+                        ) : (
+                            <div className="flex flex-row flex-wrap md:text-center text-3xl md:text-4xl">
+                            <p>{correctName(characterName)}</p>
+                            <p className="lg:mx-4">-</p>
+                            <p>{moveData.requestedMove.command}</p>
                         </div>
+                        )}
                     </div>
 
                     <div>
@@ -69,11 +77,11 @@ export default function MoveByCharacter() {
                                 <p className="text-2xl font-semibold my-2 md:text-4xl md:my-4">Similar moves</p>
                                 <div className="flex flex-nowrap overflow-x-auto gap-x-4 overflow-scroll md:gap-x-6 md:text-xl">
                                     {moveData.movesAlike.map((m, i) => {
-                                        return <div key={m.move.command + i} className="border-2 border-black rounded-md flex flex-col  px-1 bg-blue-900 min-w-[6rem] text-white md:px-2  break-words md:min-w-[8rem]" onClick={() => {
+                                        return <div key={m.move.command + i} className="border-2 border-black rounded-md flex flex-col  px-1 bg-blue-900 min-w-[6rem] text-white md:px-2  break-words md:min-w-[8rem] lg:min-w-[10rem]" onClick={() => {
                                             navigate(`/${m.characterName}/${m.move.command}`)
                                             scrollTo(0, 0);
                                         }}>
-                                            <img src={m.characterImg} alt={m.characterImg + " pic"} className="sm:size-20 mb-3 md:size-32" />
+                                            <img src={m.characterImg} alt={m.characterImg + " pic"} className="sm:size-20 mb-3 md:size-32 mx-auto mt-2" />
                                             <div>
                                                 <p>{m.move.command}</p>
                                                 <p>{m.move.hit_level}</p>

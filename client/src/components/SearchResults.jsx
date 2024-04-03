@@ -81,7 +81,7 @@ export default function SearchResults() {
     return (
         <div>
             <Navbar />
-            <div className="mb-7 mx-2 mt-2">
+            <div className="mb-7 mx-2 mt-2 lg:px-40">
                 {/* <p>resultados de: {searchText}</p>
                 {textToSearch ? <h2>{textToSearch}</h2> : 'nada'} */}
                 {results ? (
@@ -89,10 +89,10 @@ export default function SearchResults() {
                     <div className="flex flex-wrap">
                         {results.characters.length > 0 ? (
                             <div>
-                                <p className="font-semibold font-Lato text-2xl md:text-3xl">[Characters]</p>
-                                <div className="flex flex-wrap gap-x-1 gap-y-2 justify-center font-Lato mt-2 mb-4 md:mt-3">
+                                <p className="font-semibold font-Lato text-2xl md:text-3xl lg:mt-3">[Characters]</p>
+                                <div className="flex flex-wrap gap-x-1 gap-y-2 justify-center font-Lato mt-2 mb-4 md:mt-3 lg:mb-5">
                                     {currentItemsCharacters.map((char, i) => {
-                                        return <div className="border-2 border-black w-[5rem] flex flex-col text-center break-words pt-2 pb-1 rounded-md bg-blue-900 p-[0.2rem] md:text-2xl md:pt-3 md:pb-2 md:w-[7rem]" key={char + i} onClick={() => navigate(`/${char.characterName}`)}>
+                                        return <div className="border-2 border-black w-[5rem] flex flex-col text-center break-words pt-2 pb-1 rounded-md bg-blue-900 p-[0.2rem] md:text-2xl md:pt-3 md:pb-2 md:w-[7rem] px-2" key={char + i} onClick={() => navigate(`/${char.characterName}`)}>
                                             <img src={char.data[0].img} alt={char.characterName + 'pic'} />
                                             <p className="text-white">{correctName(char.characterName)}</p>
                                         </div>

@@ -31,8 +31,8 @@ export default function CharacterByName() {
         <div>
             <Navbar />
             {characterData ? (
-                <div className="mx-2 mb-7">
-                    <div className="border-2 border-black rounded-lg gap-x-4 mx-3 my-2 flex text-xl items-center bg-blue-900 text-white font-Lato md:gap-x-8 md:mx-10 md:mt-6 md:mb-4">
+                <div className="mx-2 mb-7 lg:px-40">
+                    <div className="border-2 border-black rounded-lg gap-x-4 mx-3 my-2 flex text-xl items-center bg-blue-900 text-white font-Lato md:gap-x-8 md:mx-10 md:mt-6 md:mb-4 lg:mx-36">
                         <img src={characterData[0].img} alt={`${correctName(characterName)} pic`} className="size-36 md:size-44" />
                         <p className="text-3xl md:text-4xl">{correctName(characterName)} - Move list</p>
                     </div>

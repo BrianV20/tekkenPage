@@ -16,8 +16,8 @@ export default function Navbar() {
     };
 
     return (
-        <div className="lg:px-5">
-            <div className="flex bg-[#fb8600d4] border-b-4 border-black w-full p-2 bg-[url('/tekken3.jpg')] md:p-4">
+        <div>
+            <div className="flex bg-[#fb8600d4] border-b-4 border-black w-full p-2 bg-[url('/tekken3.jpg')] md:p-4 lg:px-40">
                 <div className="font-bold text-2xl w-[40%] font-Page-Title flex flex-col pl-5 text-white md:text-3xl" onClick={() => navigate('/')}>
                     <p>Tekken</p>
                     <p>Moves</p>
