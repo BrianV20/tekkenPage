@@ -31,25 +31,25 @@ export default function MoveByCharacter() {
             <Navbar />
             {moveData != undefined ? (
                 <div className="mx-2">
-                    <div className="border-2 border-black rounded-lg gap-x-4 my-2 mx-3 flex text-xl items-center bg-blue-900 text-white">
-                        <img src={moveData.characterImg} alt={`${correctName(characterName)} pic`} className="size-36" onClick={() => {
+                    <div className="border-2 border-black rounded-lg gap-x-4 my-2 mx-3 flex text-xl items-center bg-blue-900 text-white md:gap-x-8 md:mx-10 md:mt-6 md:mb-4">
+                        <img src={moveData.characterImg} alt={`${correctName(characterName)} pic`} className="size-36 md:size-44" onClick={() => {
                             navigate(`/${characterName}`)
                         }} />
-                        <div className="flex flex-col mx-auto flex-wrap">
-                            <p className="text-3xl mx-auto">{correctName(characterName)}</p>
-                            <p className="text-xl">{moveData.requestedMove.command}</p>
+                        <div className="flex flex-col mx-auto flex-wrap md:text-center">
+                            <p className="text-3xl mx-auto md:text-4xl">{correctName(characterName)}</p>
+                            <p className="text-xl md:text-3xl">{moveData.requestedMove.command}</p>
                         </div>
                     </div>
 
                     <div>
-                        <div className="bg-lightblue grid grid-cols-5 break-words text-xl border-2 border-black font-semibold">
-                            <p className="border-r-2 border-r-black">Command</p>
-                            <p className="border-r-2 border-r-black">Hit level</p>
-                            <p className="border-r-2 border-r-black">Damage</p>
-                            <p className="border-r-2 border-r-black">Frames(startUp, block, hit, CH)</p>
-                            <p>Notes</p>
+                        <div className="bg-lightblue grid grid-cols-5 break-words text-xl border-2 border-black font-semibold text-center md:text-2xl font-Lato">
+                            <p className="border-r-2 border-r-black md:p-1">Command</p>
+                            <p className="border-r-2 border-r-black md:p-1">Hit level</p>
+                            <p className="border-r-2 border-r-black md:p-1">Damage</p>
+                            <p className="border-r-2 border-r-black md:p-1">Frames(start-up, block, hit, CH)</p>
+                            <p className=" md:p-1">Notes</p>
                         </div>
-                        <div className="grid grid-cols-5 border-2 break-words border-lightblue">
+                        <div className="grid grid-cols-5 border-2 break-words border-lightblue md:text-xl font-Default">
                             <p className="border-r-2 border-lightblue p-1">{moveData.requestedMove.command}</p>
                             <p className="border-r-2 border-lightblue p-1">{moveData.requestedMove.hit_level}</p>
                             <p className="border-r-2 border-lightblue p-1">{moveData.requestedMove.damage}</p>
@@ -66,15 +66,14 @@ export default function MoveByCharacter() {
                     <div className="mt-10 mb-8">
                         {moveData.movesAlike.length > 0 ? (
                             <div>
-                                <p className="text-2xl font-semibold my-2">Similar moves</p>
-                                <div className=" flex flex-nowrap gap-x-4 overflow-scroll">
-                                    {/* {console.log("EL ARRAY ANTES DE HACER EL MAP DE LOS MOVIMIENOS SIMILARES: " + moveData.movesAlike.length)} */}
+                                <p className="text-2xl font-semibold my-2 md:text-4xl md:my-4">Similar moves</p>
+                                <div className="flex flex-nowrap overflow-x-auto gap-x-4 overflow-scroll md:gap-x-6 md:text-xl">
                                     {moveData.movesAlike.map((m, i) => {
-                                        return <div key={m.move.command + i} className="border-2 border-black rounded-md flex flex-col min-w-[6rem] px-1 bg-blue-900 text-white" onClick={() => {
+                                        return <div key={m.move.command + i} className="border-2 border-black rounded-md flex flex-col  px-1 bg-blue-900 min-w-[6rem] text-white md:px-2  break-words md:min-w-[8rem]" onClick={() => {
                                             navigate(`/${m.characterName}/${m.move.command}`)
                                             scrollTo(0, 0);
                                         }}>
-                                            <img src={m.characterImg} alt={m.characterImg + " pic"} className="size-20 mb-3" />
+                                            <img src={m.characterImg} alt={m.characterImg + " pic"} className="sm:size-20 mb-3 md:size-32" />
                                             <div>
                                                 <p>{m.move.command}</p>
                                                 <p>{m.move.hit_level}</p>

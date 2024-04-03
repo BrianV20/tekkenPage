@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import Navbar from "./Navbar";
 import { correctName } from "../utils/functions";
-// import Paginate from "./PaginateMoves";
+import Footer from "./Footer";
 import Paginate from "./Paginate";
 
 export default function SearchResults() {
@@ -76,10 +76,12 @@ export default function SearchResults() {
             });
     }, [searchText])
 
+    // useEffect(() => {}, [paginateCharacters]);
+
     return (
         <div>
             <Navbar />
-            <div>
+            <div className="mb-7 mx-2 mt-2">
                 {/* <p>resultados de: {searchText}</p>
                 {textToSearch ? <h2>{textToSearch}</h2> : 'nada'} */}
                 {results ? (
@@ -87,12 +89,12 @@ export default function SearchResults() {
                     <div className="flex flex-wrap">
                         {results.characters.length > 0 ? (
                             <div>
-                                <p className="font-semibold" >Characters</p>
-                                <div className="bg-red-200 flex flex-wrap justify-center">
+                                <p className="font-semibold font-Lato text-2xl md:text-3xl">[Characters]</p>
+                                <div className="flex flex-wrap gap-x-1 gap-y-2 justify-center font-Lato mt-2 mb-4 md:mt-3">
                                     {currentItemsCharacters.map((char, i) => {
-                                        return <div className="border-2 border-green-500 m-2 w-[6rem]" key={char + i} onClick={() => navigate(`/${char.characterName}`)}>
+                                        return <div className="border-2 border-black w-[5rem] flex flex-col text-center break-words pt-2 pb-1 rounded-md bg-blue-900 p-[0.2rem] md:text-2xl md:pt-3 md:pb-2 md:w-[7rem]" key={char + i} onClick={() => navigate(`/${char.characterName}`)}>
                                             <img src={char.data[0].img} alt={char.characterName + 'pic'} />
-                                            <p>{correctName(char.characterName)}</p>
+                                            <p className="text-white">{correctName(char.characterName)}</p>
                                         </div>
                                     })}
                                 </div>
@@ -108,12 +110,12 @@ export default function SearchResults() {
                         {results.moves.length > 0 ? (
                             // console.log("current items: " + currentItemsMoves),
                             <div>
-                                <p className="font-semibold">Moves</p>
-                                <div className="bg-violet-300 flex flex-wrap justify-center">
+                                <p className="font-semibold font-Lato text-2xl mt-7 md:text-3xl">[Moves]</p>
+                                <div className="flex flex-wrap gap-x-1 gap-y-2 justify-center font-Lato mt-2 mb-4 md:mt-3 md:gap-x-3 md:gap-y-4">
                                     {currentItemsMoves.map((move, i) => {
-                                        return <div className="border-2 border-blue-500 m-2 flex w-[6rem] flex-col" key={move + i} onClick={() => navigate(`/${move.characterName}/${move.move.command}`)}>
+                                        return <div className="border-2 border-black w-[5rem] flex flex-col text-center break-words pt-2 pb-1 rounded-md bg-blue-900 p-[0.2rem] md:text-2xl md:pt-3 md:pb-2 md:w-[7rem]" key={move + i} onClick={() => navigate(`/${move.characterName}/${move.move.command}`)}>
                                             <img src={move.characterImg} alt={move.characterName + 'pic'} />
-                                            <p>{move.move.command}</p>
+                                            <p className="text-white">{move.move.command}</p>
                                         </div>
                                     })}
                                 </div>
@@ -129,6 +131,7 @@ export default function SearchResults() {
                     </div>
                 ) : <p>Loading...</p>}
             </div>
+            <Footer />
         </div>
     )
 };

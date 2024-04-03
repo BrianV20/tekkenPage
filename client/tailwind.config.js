@@ -11,7 +11,8 @@ export default {
       },
       fontFamily: {
         'Page-Title': ['Be Vietnam Pro'],
-        'Default': ['Poppins']
+        'Default': ['Poppins'],
+        'Lato': ['Lato']
       }
     },
   },
